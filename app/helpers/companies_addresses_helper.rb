@@ -1,2 +1,0 @@
-module CompaniesAddressesHelper
-end
