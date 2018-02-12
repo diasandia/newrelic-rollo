@@ -1,7 +1,8 @@
 require 'elasticsearch/model'
 
 class User < ApplicationRecord
-	include Elasticsearch::Model
+	include Elasticsearch::Model 
+	include Elasticsearch::Model::Callbacks
 
 	has_many :user_companies
 	has_many :companies, through: :user_companies
