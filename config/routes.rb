@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, except: :destroy
+  resources :users, only: [:index, :show]
   
   root 'users#index'
 end
