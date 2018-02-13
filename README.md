@@ -42,7 +42,7 @@ Todo
 
 Contribute
 ----------
-* Clone repo
+* Clone https://github.com/diasandia/newrelic-rollo
 * Create your feature branch (git checkout -b name-initials-new-feature)
 * Add and commit your changes (git commit -am 'Add new feature')
 * Push branch (git push origin name-initials-new-feature)
