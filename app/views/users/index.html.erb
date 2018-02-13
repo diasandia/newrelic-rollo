@@ -3,11 +3,14 @@
 <nav class='navbar navbar-default'>
   <div class='container'>
     <%= form_with url: users_path, method: :get, local: true do |f| %>
-      <%= f.text_field :q, id: :q %>
+      <%= f.text_field :query, id: :query %>
       <%= f.submit "Search" %>
     <% end %>
   </div>
 </nav>
 
-
-<%= render 'users'%>
+<% if params[:query] %>
+  <%= "This is the query: #{params[:query]} " %>
+<% else %>
+  <%= render 'users'%>
+<% end %>
